@@ -114,7 +114,7 @@ data:
         unclassified:
           location:
             adminAddress: "igor.golubovich.1991@gmail.com"
-            url: "http://jenkins.k8s-17.sa/"
+            url: "http://jnk.k8s-17.sa/"
           shell:
             shell: "/bin/bash"
 ---
@@ -139,10 +139,10 @@ metadata:
   namespace: ci-cd
   annotations:
     kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/server-alias: "jenkins.k8s-18.sa"
+    nginx.ingress.kubernetes.io/server-alias: "jnk.k8s-18.sa"
 spec:
   rules:
-    - host: jenkins.k8s-17.sa
+    - host: jnk.k8s-17.sa
       http:
         paths:
           - path: /
